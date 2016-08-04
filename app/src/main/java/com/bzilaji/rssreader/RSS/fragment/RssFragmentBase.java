@@ -22,7 +22,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bzilaji.rssreader.R;
-import com.bzilaji.rssreader.RSS.NasaRssCallFactory;
 import com.bzilaji.rssreader.RSS.history.History;
 import com.bzilaji.rssreader.RSS.history.HistoryImpl;
 import com.bzilaji.rssreader.RSS.model.Article;
