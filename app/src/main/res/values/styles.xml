@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
+        <item name="actionBarTheme">@style/Widget.MyTheme.ActionBarTheme</item>
+    </style>
+
+    <style name="Widget.MyTheme.ActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="titleMarginStart">@dimen/titleMarginStart</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="Widget.MyTheme.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+
+</resources>

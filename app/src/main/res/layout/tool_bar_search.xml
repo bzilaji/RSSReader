@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/headerbar_elevation"
+    android:gravity="left|center_vertical"
+    android:minHeight="?attr/actionBarSize"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/keyline_1"
+    android:paddingRight="@dimen/keyline_1"
+    android:visibility="visible">
+
+    <ImageButton
+        android:id="@android:id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="?selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:tint="@color/secondary_text_default_material_light"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+
+        <view
+            android:id="@+id/search_input"
+            class="com.bzilaji.rssreader.view.ToolBarSearchView$SearchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:hint="@android:string/search_go"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/keyline_1"
+            android:paddingRight="56dp"></view>
+
+        <ImageButton
+            android:id="@+id/clear_input"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end|center_vertical"
+            android:background="?selectableItemBackgroundBorderless"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:tint="@color/secondary_text_default_material_light"
+            app:srcCompat="@drawable/ic_close_black_24dp" />
+
+    </FrameLayout>
+</merge>
